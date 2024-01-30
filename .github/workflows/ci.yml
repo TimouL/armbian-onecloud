@@ -209,7 +209,7 @@ jobs:
           #- desktop #test2
         include:
           - TYPE: desktop
-            DESKTOP_ENVIRONMENT: xfce
+            #DESKTOP_ENVIRONMENT: xfce
             DESKTOP_ENVIRONMENT_CONFIG_NAME: config_base
             DESKTOP_APPGROUPS_SELECTED: ""
         exclude:
@@ -256,7 +256,6 @@ jobs:
               BOARD=onecloud \
               BRANCH=${{ matrix.BRANCH }} \
               RELEASE=${{ matrix.RELEASE }} \
-              KERNELVERSION=6.1.63 #test1
               KERNEL_CONFIGURE=no \
               BUILD_MINIMAL=${{ matrix.TYPE == 'minimal' && 'yes' || 'no' }} \
               BUILD_DESKTOP=${{ matrix.TYPE == 'desktop' && 'yes' || 'no' }} \
