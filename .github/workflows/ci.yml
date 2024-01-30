@@ -15,7 +15,7 @@ env:
   UBOOT_RELEASE: latest
   UBOOT_BURNIMG: eMMC.burn.img
   ARMBIAN_REPO: armbian/build
-  ARMBIAN_REF: main
+  ARMBIAN_REF: v23.11 #test6
   PATCHES: 4077,5076
   PATCHES_DISABLED: 5082
 
@@ -201,7 +201,7 @@ jobs:
           # - lunar # Ubuntu 23.04
           # - buster # Debian 10
           #- bullseye # Debian 11
-          - 23.11.1 #bookworm # Debian 12
+          - bookworm # Debian 12
           #- sid # Debian unstable#test3
         TYPE:
           - minimal
