@@ -47,7 +47,10 @@ jobs:
             ARMBIAN_SHA=$ARMBIAN_SHA
           EOF
           echo "env=$(cat $GITHUB_ENV | base64 -w 0)" >>$GITHUB_OUTPUT
-
+          
+      - name: test
+        run: echo "github.repository is ----- ${{ github.repository }}, github.ref_name is --- ${{ github.ref_name }}"
+        
       - name: Show repositories information
         run: |
           C_RESET="\e[0m"
