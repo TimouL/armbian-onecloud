@@ -208,12 +208,12 @@ jobs:
           - cli
           #- desktop #test2
         include:
-          #- TYPE: desktop
+          - TYPE: desktop
             #DESKTOP_ENVIRONMENT: xfce
             #DESKTOP_ENVIRONMENT_CONFIG_NAME: config_base
             #DESKTOP_APPGROUPS_SELECTED: ""
         exclude:
-          #- RELEASE: sid
+          - RELEASE: sid
             #TYPE: desktop
 
     steps:
