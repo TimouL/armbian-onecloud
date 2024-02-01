@@ -161,7 +161,7 @@ jobs:
 
       - name: Build
         run: |
-          # Don't update remote cache
+          # Don't update remote cache 1
           export GITHUB_ACTIONS=false
           sudo --preserve-env \
             ./compile.sh kernel \
