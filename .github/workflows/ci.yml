@@ -48,7 +48,7 @@ jobs:
           EOF
           echo "env=$(cat $GITHUB_ENV | base64 -w 0)" >>$GITHUB_OUTPUT
           
-      - name: test
+      - name: testbytimou
         run: echo "github.repository is ---- ${{ github.repository }}, github.ref_name is --- ${{ github.ref_name }}"
         
       - name: Show repositories information
