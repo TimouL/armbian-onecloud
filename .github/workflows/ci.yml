@@ -168,6 +168,7 @@ jobs:
               ALLOW_ROOT=yes \
               BOARD=onecloud \
               BRANCH=${{ matrix.BRANCH }} \
+              KERNEL_CONFIGURE=yes \
               EXPERT=yes \
               USE_CCACHE=no
           sudo chown $(id -u):$(id -g) -R output/
@@ -256,7 +257,7 @@ jobs:
               BOARD=onecloud \
               BRANCH=${{ matrix.BRANCH }} \
               RELEASE=${{ matrix.RELEASE }} \
-              KERNEL_CONFIGURE=no \
+              KERNEL_CONFIGURE=yes \
               BUILD_MINIMAL=${{ matrix.TYPE == 'minimal' && 'yes' || 'no' }} \
               BUILD_DESKTOP=${{ matrix.TYPE == 'desktop' && 'yes' || 'no' }} \
               DESKTOP_ENVIRONMENT=${{ matrix.DESKTOP_ENVIRONMENT }} \
