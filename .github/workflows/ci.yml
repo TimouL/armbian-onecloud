@@ -15,7 +15,7 @@ env:
   UBOOT_RELEASE: latest
   UBOOT_BURNIMG: eMMC.burn.img
   ARMBIAN_REPO: TimouL/armbian #armbian/build
-  ARMBIAN_REF: master #v23.11 #test6
+  ARMBIAN_REF: main #v23.11 #test6
   PATCHES: 4077,5076
   PATCHES_DISABLED: 5082
 
